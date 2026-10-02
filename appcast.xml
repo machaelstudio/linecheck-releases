@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>LineCheck</title>
+    <link>https://github.com/machaelstudio/linecheck-releases/releases/download</link>
+    <item>
+      <title>LineCheck 0.1</title>
+      <pubDate>Fri, 02 Oct 2026 03:21:52 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<h2>LineCheck 0.1</h2><ul><li>macOS app for checking the inputs and outputs of an audio interface: pick the device in the sidebar, press Start, and every input shows its level, noise floor, mains hum, DC offset and clipping with a verdict per channel. The device runs at its own sample rate and buffer size; LineCheck never changes them.</li><li>Inputs: peak and hold meters, A-weighted noise floor while the line is quiet, 50/60 Hz hum and its harmonics with a hum-versus-buzz call (unbalanced cable or ground loop), DC offset, clipping, digital silence, and whines from switching supplies. Three threshold presets: Strict (-85 dBFS), Studio (-75 dBFS) and Live (-60 dBFS). Each channel&#x27;s inspector explains what the reading means and what to check, with a spectrum marking the mains harmonics.</li><li>Outputs: sine, pink noise, white noise, a 20 Hz to 20 kHz sweep or Channel ID (a different note on every output) to any set of outputs, with a level control, Mute (Space) and a cycle mode that solos one output after another.</li><li>Loopback: patch outputs back into inputs and run it. Every output sends a short sweep and LineCheck reports which input it came back on, the round-trip delay, the level, polarity, frequency-response deviation, crosstalk, missing lines, swapped pairs and inputs that receive several outputs.</li><li>Phase: LineCheck sends pink noise on one output (a known-good signal) and checks what every input receives against exactly what was sent: polarity, round trip in milliseconds (next to the driver&#x27;s own figure), level and match. Live, so you can re-patch a cable and watch the verdict change. The reference can also be another input, comparing inputs with each other using whatever they hear (kick in/out, snare top/bottom, DI versus amp): then it shows the time offset and its path distance too. Verdicts: In phase, Inverted, Delayed, Delayed and inverted, Unrelated, No signal.</li><li>Log of every status change, and a text or JSON report of the whole session (File &gt; Export Report…).</li><li>Command line twin `linecheck-cli` (devices, monitor, tone, phase, loopback) for scripts.</li><li>In-app updates through Sparkle (weekly check, LineCheck &gt; Check for Updates…) and the same release tooling as AtmosCheck.</li></ul>]]></description>
+      <enclosure url="https://github.com/machaelstudio/linecheck-releases/releases/download/v0.1/LineCheck-0.1.dmg" sparkle:edSignature="21qveZWBVeQAeymwKELHkHuZYRwDODbInDHRxIKLvlIKXYO14vBHd5cfiLBXPlf1FSLRkJXFGn61kuJ74/zjAw==" length="3381070" type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>
